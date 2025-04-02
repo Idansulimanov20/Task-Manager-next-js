@@ -66,7 +66,7 @@ const TaskManager = () => {
         todo.id === editTodo.id ? { ...todo, title, description } : todo
       );
       setTodos(updatedTodos);
-      setEditTodo(null); // Reset edit state
+      setEditTodo(null); 
       setTitle("");
       setDescription("");
     }
@@ -79,7 +79,6 @@ const TaskManager = () => {
 
   return (
     <div className="flex min-h-screen bg-gradient-to-r from-blue-400 to-purple-500">
-      {/* Left side - Task Creation */}
       <div className="flex flex-col items-center p-6 w-1/3 text-white">
         <h1 className="text-3xl font-extrabold mb-6 shadow-lg">Task Manager</h1>
         <div className="flex flex-col gap-4 mb-6 w-80">
@@ -120,7 +119,6 @@ const TaskManager = () => {
         )}
       </div>
 
-      {/* Right side - Task Table */}
       <div className="w-2/3 p-6 overflow-auto text-white">
         <table className="w-full bg-white shadow-lg rounded-lg text-black">
           <thead>
